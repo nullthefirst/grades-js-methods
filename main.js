@@ -35,3 +35,11 @@ const gradesFull = primaryGrades.concat(secondaryGrades);
 
 const gradesString = gradesFull.join(', ');
 console.log(gradesString);
+
+// Use reverse to reverse the order of grades in the array.
+
+secondaryGrades.reverse();
+
+// Use sort to sort the grades in ascending order.
+
+primaryGrades.sort((a, b) => a - b);
