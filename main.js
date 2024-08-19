@@ -34,7 +34,6 @@ const gradesFull = primaryGrades.concat(secondaryGrades);
 // Use join to create a string from the array of grades, separated by commas.
 
 const gradesString = gradesFull.join(', ');
-console.log(gradesString);
 
 // Use reverse to reverse the order of grades in the array.
 
@@ -43,3 +42,15 @@ secondaryGrades.reverse();
 // Use sort to sort the grades in ascending order.
 
 primaryGrades.sort((a, b) => a - b);
+
+// Use forEach to print each grade.
+
+gradesFull.forEach((grade) => {
+  console.log(`This grade is worth ${grade} points.`);
+});
+
+// Use map to create a new array of grades, each increased by 5 points.
+
+const gradesCorrected = gradesFull.map((grade) => grade + 5);
+
+console.log(gradesFull, gradesCorrected);
