@@ -17,3 +17,11 @@ primaryGrades.unshift(24);
 // Use shift to remove the first grade from the array.
 
 primaryGrades.shift();
+
+// Use splice to insert and remove elements at specific positions.
+
+primaryGrades.splice(4, 2);
+
+// Use slice to create a new array containing a portion of the original array.
+
+const revampedGrades = [83, 20, ...primaryGrades];
