@@ -25,3 +25,13 @@ primaryGrades.splice(4, 2);
 // Use slice to create a new array containing a portion of the original array.
 
 const revampedGrades = [83, 20, ...primaryGrades];
+
+// Use concat to merge two arrays of grades.
+
+const secondaryGrades = [66, 64, 91, 64, 85, 99, 67, 90, 68, 67];
+const gradesFull = primaryGrades.concat(secondaryGrades);
+
+// Use join to create a string from the array of grades, separated by commas.
+
+const gradesString = gradesFull.join(', ');
+console.log(gradesString);
