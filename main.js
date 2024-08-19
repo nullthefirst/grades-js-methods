@@ -1,6 +1,6 @@
 // Initialize an array of grades.
 
-const primaryGrades = [92, 85, 78, 95, 88, 72, 65, 90, 83, 75];
+const primaryGrades = [92, 85, 88, 95, 88, 72, 65, 90, 83, 75];
 
 // Use push to add a grade to the end of the array.
 
@@ -53,4 +53,26 @@ gradesFull.forEach((grade) => {
 
 const gradesCorrected = gradesFull.map((grade) => grade + 5);
 
-console.log(gradesFull, gradesCorrected);
+// Use filter to create an array of passing grades (above 70).
+
+const passingGrades = gradesCorrected.filter((grade) => grade > 70);
+
+// Use reduce to calculate the total sum of grades.
+
+const gradesTotal = gradesCorrected.reduce((totalGrades, grade) => totalGrades + grade);
+
+// Use find to locate the first grade that is exactly 88.
+
+const grade88 = gradesFull.find((grade) => grade === 88);
+
+// Use findIndex to find the index of the first grade that is below 70.
+
+const gradeFirstUnder70 = gradesFull.findIndex((grade) => grade < 70);
+
+// Use some to check if any grade is below 60.
+
+const gradesAnyBelow60 = gradesCorrected.some((grade) => grade < 60);
+
+// Use every to check if all grades are above 50.
+
+const allGradesAbove50 = gradesCorrected.every((grade) => grade > 50);
