@@ -76,3 +76,7 @@ const gradesAnyBelow60 = gradesCorrected.some((grade) => grade < 60);
 // Use every to check if all grades are above 50.
 
 const allGradesAbove50 = gradesCorrected.every((grade) => grade > 50);
+
+// Use includes to check if a specific grade exists in the array.
+
+const gradeIncludes72 = gradesCorrected.includes(72);
